@@ -46,6 +46,8 @@ namespace JobsAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "JobsAPI", Version = "v1" });
             });
+
+            services.AddDbContext<JobDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
